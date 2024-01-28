@@ -14,7 +14,7 @@ export default function GrowthDecreaseChart({ revArray }: { revArray: RevArray[]
         })
         lastWeekRev = week.claimedSol
     }else{
-        const growthDecreaePercent = (((week.claimedSol/lastWeekRev)-1)*100).toFixed(0)
+        const growthDecreaePercent = Number((((week.claimedSol/lastWeekRev)-1)*100).toFixed(0))
         data.push({
             'Week': `${week.week}`,
             'Percent': growthDecreaePercent,
