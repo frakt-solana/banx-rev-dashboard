@@ -26,7 +26,7 @@ export default function DonutChartClaimUnclaim({ revArray }: { revArray: RevArra
     return (
         <Card className="mt-8">
             <Title>Total share claimed/unclaimed</Title>
-            <Text>Comparison between total Claimed Shared X Unclaimed Share in all weeks</Text>
+            <Text>Comparison between total Claimed Share X Unclaimed Share in all weeks</Text>
             <DonutChart
             className="mt-4 h-80"
             data={data}
