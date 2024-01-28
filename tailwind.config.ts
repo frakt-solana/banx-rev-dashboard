@@ -1,5 +1,7 @@
 import type { Config } from 'tailwindcss';
 
+import colors from "tailwindcss/colors";
+
 export default {
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -11,36 +13,36 @@ export default {
     current: 'currentColor',
     extend: {
       colors: {
-        // light mode
-        tremor: {
+        // dark mode
+        "dark-tremor": {
           brand: {
-            faint: '#eff6ff', // blue-50
-            muted: '#bfdbfe', // blue-200
-            subtle: '#60a5fa', // blue-400
-            DEFAULT: '#3b82f6', // blue-500
-            emphasis: '#1d4ed8', // blue-700
-            inverted: '#ffffff' // white
+            faint: "#0B1229",
+            muted: colors.blue[950],
+            subtle: colors.blue[800],
+            DEFAULT: colors.blue[500],
+            emphasis: colors.blue[400],
+            inverted: colors.blue[950],
           },
           background: {
-            muted: '#f9fafb', // gray-50
-            subtle: '#f3f4f6', // gray-100
-            DEFAULT: '#ffffff', // white
-            emphasis: '#374151' // gray-700
+            muted: "#131A2B",
+            subtle: colors.gray[800],
+            DEFAULT: colors.gray[900],
+            emphasis: colors.gray[300],
           },
           border: {
-            DEFAULT: '#e5e7eb' // gray-200
+            DEFAULT: colors.gray[700],
           },
           ring: {
-            DEFAULT: '#e5e7eb' // gray-200
+            DEFAULT: colors.gray[800],
           },
           content: {
-            subtle: '#9ca3af', // gray-400
-            DEFAULT: '#6b7280', // gray-500
-            emphasis: '#374151', // gray-700
-            strong: '#111827', // gray-900
-            inverted: '#ffffff' // white
-          }
-        }
+            subtle: colors.gray[600],
+            DEFAULT: colors.gray[500],
+            emphasis: colors.gray[200],
+            strong: colors.gray[50],
+            inverted: colors.gray[950],
+          },
+        },
       },
       boxShadow: {
         // light

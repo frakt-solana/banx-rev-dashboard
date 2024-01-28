@@ -1,36 +1,31 @@
-import { sql } from '@vercel/postgres';
-import { Card, Title, Text } from '@tremor/react';
-import Search from './search';
-import UsersTable from './table';
+import { Card, Title, Grid, Metric} from '@tremor/react';
+import Chart from './chart';
+import GrowthDecreaseChart from './growthDecreaseChart';
+import { revArray } from './revData';
+import RevShareTable from './table';
+import DonutChartClaimUnclaim from './donutChart';
+import BarChartStakedUnstakedPoints from './barChart';
 
-interface User {
-  id: number;
-  name: string;
-  username: string;
-  email: string;
+export default async function IndexPage() {
+let totalSol = 0
+for(const week of revArray){
+  totalSol+= week.claimedSol
 }
-
-export default async function IndexPage({
-  searchParams
-}: {
-  searchParams: { q: string };
-}) {
-  const search = searchParams.q ?? '';
-  const result = await sql`
-    SELECT id, name, username, email 
-    FROM users 
-    WHERE name ILIKE ${'%' + search + '%'};
-  `;
-  const users = result.rows as User[];
-
+const totalWeeks = revArray[revArray.length-1].week
   return (
-    <main className="p-4 md:p-10 mx-auto max-w-7xl">
-      <Title>Users</Title>
-      <Text>A list of users retrieved from a Postgres database.</Text>
-      <Search />
+    <main className="p-4 md:p-10 mx-auto max-w-7xl ">
+      <Metric>Banx Revenue</Metric>
+      <Title>{totalSol.toFixed(0)} SOL distributed to holders in {totalWeeks} weeks</Title>
+      <Grid numItems={1} numItemsSm={2} numItemsLg={2} className="gap-2">
+          <Chart revArray={revArray}/>
+          <GrowthDecreaseChart revArray={revArray}/>
+          <DonutChartClaimUnclaim revArray={revArray}/>
+          <BarChartStakedUnstakedPoints revArray={revArray}/>
+      </Grid>
       <Card className="mt-6">
-        <UsersTable users={users} />
+        <RevShareTable revArray={revArray} />
       </Card>
+     
     </main>
   );
 }
