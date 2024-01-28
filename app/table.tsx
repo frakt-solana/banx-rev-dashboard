@@ -29,7 +29,7 @@ export default function RevShareTable({ revArray }: { revArray: RevArray[] }) {
           <TableRow key={week.week}>
             <TableCell>{week.week}</TableCell>
             <TableCell>
-              <Text>{week.claimedSol.toFixed(2)}</Text>
+              <Text>{week.claimedSol.toFixed(2)} SOL</Text>
             </TableCell>
             <TableCell>
               <Text>{week.totalStakedPoints}</Text>
@@ -38,13 +38,13 @@ export default function RevShareTable({ revArray }: { revArray: RevArray[] }) {
               <Text>{week.totalUnstakedPoints}</Text>
             </TableCell>
             <TableCell>
-              <Text>{(week.claimedSol*week.claimedShare).toFixed(2)}({(week.claimedShare*100).toFixed(2)}%)</Text>
+              <Text>{(week.claimedSol*week.claimedShare).toFixed(2)} SOL ({(week.claimedShare*100).toFixed(2)}%)</Text>
             </TableCell>
             <TableCell>
-              <Text>{(week.claimedSol*week.unclaimedShare).toFixed(2)}({(week.unclaimedShare*100).toFixed(2)}%)</Text>
+              <Text>{(week.claimedSol*week.unclaimedShare).toFixed(2)} SOL ({(week.unclaimedShare*100).toFixed(2)}%)</Text>
             </TableCell>
             <TableCell>
-              <Text>{week.ratioPerPoint.toFixed(6)}</Text>
+              <Text>{week.ratioPerPoint.toFixed(6)} SOL</Text>
             </TableCell>
           </TableRow>
         ))}
