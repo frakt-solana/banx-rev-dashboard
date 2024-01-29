@@ -12,7 +12,8 @@ export const revArray = [
     claimedShare: 0.8847,
     claimedSol: 2664,
     unclaimedShare: 0.1153,
-    ratioPerPoint: 0.0055967
+    ratioPerPoint: 0.0055967,
+    solPrice: 100,
   },
   {
     week: 2,
@@ -25,7 +26,8 @@ export const revArray = [
     claimedShare: 0.913,
     claimedSol: 1000,
     unclaimedShare: 0.087,
-    ratioPerPoint: 0.0020554
+    ratioPerPoint: 0.0020554,
+    solPrice: 100,
   },
   {
     week: 3,
@@ -38,7 +40,8 @@ export const revArray = [
     claimedShare: 0.834,
     claimedSol: 850,
     unclaimedShare: 0.166,
-    ratioPerPoint: 0.00174
+    ratioPerPoint: 0.00174,
+    solPrice: 100,
   },
   {
     week: 4,
@@ -51,7 +54,8 @@ export const revArray = [
     claimedShare: 0.842,
     claimedSol: 850,
     unclaimedShare: 0.158,
-    ratioPerPoint: 0.00173
+    ratioPerPoint: 0.00173,
+    solPrice: 100,
   },
   {
     week: 5,
@@ -64,7 +68,8 @@ export const revArray = [
     claimedShare: 0.77,
     claimedSol: 725,
     unclaimedShare: 0.23,
-    ratioPerPoint: 0.00147
+    ratioPerPoint: 0.00147,
+    solPrice: 100,
   },
   {
     week: 6,
@@ -77,7 +82,8 @@ export const revArray = [
     claimedShare: 0.788,
     claimedSol: 750,
     unclaimedShare: 0.222,
-    ratioPerPoint: 0.00151
+    ratioPerPoint: 0.00151,
+    solPrice: 100,
   },
   {
     week: 7,
@@ -90,7 +96,8 @@ export const revArray = [
     claimedShare: 0.807,
     claimedSol: 750,
     unclaimedShare: 0.193,
-    ratioPerPoint: 0.0015
+    ratioPerPoint: 0.0015,
+    solPrice: 100,
   },
   {
     week: 8,
@@ -103,7 +110,8 @@ export const revArray = [
     claimedShare: 0.809,
     claimedSol: 750,
     unclaimedShare: 0.191,
-    ratioPerPoint: 0.0015
+    ratioPerPoint: 0.0015,
+    solPrice: 100,
   },
   {
     week: 9,
@@ -116,7 +124,8 @@ export const revArray = [
     claimedShare: 0.802,
     claimedSol: 750,
     unclaimedShare: 0.198,
-    ratioPerPoint: 0.00149
+    ratioPerPoint: 0.00149,
+    solPrice: 100,
   },
   {
     week: 10,
@@ -129,7 +138,8 @@ export const revArray = [
     claimedShare: 0.402,
     claimedSol: 750,
     unclaimedShare: 0.198,
-    ratioPerPoint: 0.00149
+    ratioPerPoint: 0.00149,
+    solPrice: 100,
   },
   {
     week: 11,
@@ -142,7 +152,8 @@ export const revArray = [
     claimedShare: 0.806,
     claimedSol: 750,
     unclaimedShare: 0.194,
-    ratioPerPoint: 0.00149
+    ratioPerPoint: 0.00149,
+    solPrice: 100,
   },
   {
     week: 12,
@@ -155,7 +166,8 @@ export const revArray = [
     claimedShare: 0.7,
     claimedSol: 750,
     unclaimedShare: 0.3,
-    ratioPerPoint: 0.00149
+    ratioPerPoint: 0.00149,
+    solPrice: 100,
   },
   {
     week: 13,
@@ -168,7 +180,8 @@ export const revArray = [
     claimedShare: 0.677,
     claimedSol: 750,
     unclaimedShare: 0.323,
-    ratioPerPoint: 0.00149
+    ratioPerPoint: 0.00149,
+    solPrice: 100,
   },
   {
     week: 14,
@@ -181,7 +194,8 @@ export const revArray = [
     claimedShare: 0.733,
     claimedSol: 750,
     unclaimedShare: 0.267,
-    ratioPerPoint: 0.00149
+    ratioPerPoint: 0.00149,
+    solPrice: 100,
   },
   {
     week: 15,
@@ -194,7 +208,8 @@ export const revArray = [
     claimedShare: 0.746,
     claimedSol: 750,
     unclaimedShare: 0.254,
-    ratioPerPoint: 0.00147
+    ratioPerPoint: 0.00147,
+    solPrice: 100,
   },
   {
     week: 16,
@@ -207,7 +222,8 @@ export const revArray = [
     claimedShare: 0.749,
     claimedSol: 750,
     unclaimedShare: 0.251,
-    ratioPerPoint: 0.00147
+    ratioPerPoint: 0.00147,
+    solPrice: 100,
   },
   {
     week: 17,
@@ -220,7 +236,8 @@ export const revArray = [
     claimedShare: 0.478,
     claimedSol: 750,
     unclaimedShare: 0.252,
-    ratioPerPoint: 0.00145
+    ratioPerPoint: 0.00145,
+    solPrice: 100,
   },
   {
     week: 18,
@@ -233,7 +250,8 @@ export const revArray = [
     claimedShare: 0.77,
     claimedSol: 750,
     unclaimedShare: 0.23,
-    ratioPerPoint: 0.00145
+    ratioPerPoint: 0.00145,
+    solPrice: 100,
   },
   {
     week: 19,
@@ -246,7 +264,8 @@ export const revArray = [
     claimedShare: 0.737,
     claimedSol: 750,
     unclaimedShare: 0.263,
-    ratioPerPoint: 0.00143
+    ratioPerPoint: 0.00143,
+    solPrice: 100,
   },
   {
     week: 20,
@@ -259,7 +278,8 @@ export const revArray = [
     claimedShare: 0.784,
     claimedSol: 750,
     unclaimedShare: 0.211,
-    ratioPerPoint: 0.00141
+    ratioPerPoint: 0.00141,
+    solPrice: 100,
   },
   {
     week: 21,
@@ -272,7 +292,8 @@ export const revArray = [
     claimedShare: 0.73,
     claimedSol: 147,
     unclaimedShare: 0.27,
-    ratioPerPoint: 0.00027
+    ratioPerPoint: 0.00027,
+    solPrice: 100,
   },
   {
     week: 22,
@@ -285,7 +306,8 @@ export const revArray = [
     claimedShare: 0.717,
     claimedSol: 150,
     unclaimedShare: 0.282,
-    ratioPerPoint: 0.00027
+    ratioPerPoint: 0.00027,
+    solPrice: 100,
   },
   {
     week: 23,
@@ -298,7 +320,8 @@ export const revArray = [
     claimedShare: 0.64,
     claimedSol: 178,
     unclaimedShare: 0.36,
-    ratioPerPoint: 0.0003
+    ratioPerPoint: 0.0003,
+    solPrice: 100,
   },
   {
     week: 24,
@@ -311,7 +334,8 @@ export const revArray = [
     claimedShare: 0.676,
     claimedSol: 181,
     unclaimedShare: 0.327,
-    ratioPerPoint: 0.0003
+    ratioPerPoint: 0.0003,
+    solPrice: 100,
   },
   {
     week: 25,
@@ -324,7 +348,8 @@ export const revArray = [
     claimedShare: 0.626,
     claimedSol: 185,
     unclaimedShare: 0.374,
-    ratioPerPoint: 0.000308
+    ratioPerPoint: 0.000308,
+    solPrice: 100,
   },
   {
     week: 26,
@@ -337,7 +362,8 @@ export const revArray = [
     claimedShare: 0.654,
     claimedSol: 162,
     unclaimedShare: 0.345,
-    ratioPerPoint: 0.00027
+    ratioPerPoint: 0.00027,
+    solPrice: 100,
   },
   {
     week: 27,
@@ -350,7 +376,8 @@ export const revArray = [
     claimedShare: 0.639,
     claimedSol: 88,
     unclaimedShare: 0.36,
-    ratioPerPoint: 0.000146
+    ratioPerPoint: 0.000146,
+    solPrice: 100,
   },
   {
     week: 28,
@@ -363,7 +390,8 @@ export const revArray = [
     claimedShare: 0.61,
     claimedSol: 102,
     unclaimedShare: 0.389,
-    ratioPerPoint: 0.00017
+    ratioPerPoint: 0.00017,
+    solPrice: 100,
   },
   {
     week: 29,
@@ -376,7 +404,8 @@ export const revArray = [
     claimedShare: 0.618,
     claimedSol: 233,
     unclaimedShare: 0.381,
-    ratioPerPoint: 0.00038
+    ratioPerPoint: 0.00038,
+    solPrice: 100,
   },
   {
     week: 30,
@@ -389,6 +418,7 @@ export const revArray = [
     claimedShare: 0.589,
     claimedSol: 171,
     unclaimedShare: 0.41,
-    ratioPerPoint: 0.00028
+    ratioPerPoint: 0.00028,
+    solPrice: 100,
   }
 ] as RevArray[];

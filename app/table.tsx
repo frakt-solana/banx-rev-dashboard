@@ -10,7 +10,7 @@ import {
 import { RevArray } from './types';
 
 
-export default function RevShareTable({ revArray }: { revArray: RevArray[] }) {
+export default function RevShareTable({ revArray, ticker }: { revArray: RevArray[], ticker: string }) {
   return (
     <Table>
       <TableHead>
@@ -30,7 +30,7 @@ export default function RevShareTable({ revArray }: { revArray: RevArray[] }) {
           <TableRow key={week.week}>
             <TableCell>{week.week}</TableCell>
             <TableCell>
-              <Text>{week.claimedSol.toFixed(2)} SOL</Text>
+              <Text>{week.claimedSol.toFixed(2)} {ticker}</Text>
             </TableCell>
             <TableCell>
               <Text>{week.totalStakedPoints}</Text>
@@ -39,16 +39,16 @@ export default function RevShareTable({ revArray }: { revArray: RevArray[] }) {
               <Text>{week.totalUnstakedPoints}</Text>
             </TableCell>
             <TableCell>
-              <Text>{(week.claimedSol*week.claimedShare).toFixed(2)} SOL ({(week.claimedShare*100).toFixed(2)}%)</Text>
+              <Text>{(week.claimedSol*week.claimedShare).toFixed(2)} {ticker} ({(week.claimedShare*100).toFixed(2)}%)</Text>
             </TableCell>
             <TableCell>
-              <Text>{(week.claimedSol*week.unclaimedShare).toFixed(2)} SOL ({(week.unclaimedShare*100).toFixed(2)}%)</Text>
+              <Text>{(week.claimedSol*week.unclaimedShare).toFixed(2)} {ticker} ({(week.unclaimedShare*100).toFixed(2)}%)</Text>
             </TableCell>
             <TableCell>
-              <Text>{(week.ratioPerPoint*10).toFixed(4)}/{(week.ratioPerPoint*63).toFixed(4)} SOL</Text>
+              <Text>{(week.ratioPerPoint*10).toFixed(4)}/{(week.ratioPerPoint*63).toFixed(4)} {ticker}</Text>
             </TableCell>
             <TableCell>
-              <Text>{week.ratioPerPoint.toFixed(6)} SOL</Text>
+              <Text>{week.ratioPerPoint.toFixed(6)} {ticker}</Text>
             </TableCell>
           </TableRow>
         ))}

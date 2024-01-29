@@ -3,7 +3,7 @@
 import { Card, AreaChart, Title, Text } from '@tremor/react';
 import { RevArray } from './types';
 
-export default function Chart({ revArray }: { revArray: RevArray[] }) {
+export default function Chart({ revArray, ticker }: { revArray: RevArray[], ticker: string }) {
   let data = []
   for(const week of revArray) {
     data.push({
@@ -24,7 +24,7 @@ export default function Chart({ revArray }: { revArray: RevArray[] }) {
         index="Week"
         colors={['indigo', 'green', 'red']}
         valueFormatter={(number: number) =>
-          `${Intl.NumberFormat('us').format(number).toString()} SOL`
+          `${Intl.NumberFormat('us').format(number).toString()} ${ticker}`
         }
         yAxisWidth={60}
       />

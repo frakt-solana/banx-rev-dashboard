@@ -4,7 +4,7 @@ import { Card, DonutChart, Title, Text} from "@tremor/react";
 import { RevArray } from "./types";
 
 
-export default function DonutChartClaimUnclaim({ revArray }: { revArray: RevArray[] }) {
+export default function DonutChartClaimUnclaim({ revArray, ticker }: { revArray: RevArray[], ticker: string }) {
     
     let totalClaimed = 0
     let totalUnclaimed = 0
@@ -34,7 +34,7 @@ export default function DonutChartClaimUnclaim({ revArray }: { revArray: RevArra
             index="name"
             colors={["green", "red"]}
             valueFormatter={(number: number) =>
-                `${Intl.NumberFormat('us').format(number).toString()} SOL`
+                `${Intl.NumberFormat('us').format(number).toString()} ${ticker}`
               }
             />
         </Card>

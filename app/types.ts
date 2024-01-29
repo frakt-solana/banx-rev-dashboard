@@ -10,4 +10,5 @@ export interface RevArray {
     claimedSol: number;
     unclaimedShare: number;
     ratioPerPoint: number;
+    solPrice: number;
   }
