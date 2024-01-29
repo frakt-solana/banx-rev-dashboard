@@ -26,7 +26,7 @@ export default function RevShareTable({ revArray }: { revArray: RevArray[] }) {
         </TableRow>
       </TableHead>
       <TableBody>
-        {revArray.reverse().map((week) => (
+        {revArray.slice().reverse().map((week) => (
           <TableRow key={week.week}>
             <TableCell>{week.week}</TableCell>
             <TableCell>
