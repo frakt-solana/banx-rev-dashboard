@@ -21,11 +21,12 @@ export default function RevShareTable({ revArray }: { revArray: RevArray[] }) {
           <TableHeaderCell>Unstaked Points</TableHeaderCell>
           <TableHeaderCell>Claimed Share</TableHeaderCell>
           <TableHeaderCell>Unclaimed Share</TableHeaderCell>
+          <TableHeaderCell>Rev 10/63 points</TableHeaderCell>
           <TableHeaderCell>Sol per point</TableHeaderCell>
         </TableRow>
       </TableHead>
       <TableBody>
-        {revArray.map((week) => (
+        {revArray.reverse().map((week) => (
           <TableRow key={week.week}>
             <TableCell>{week.week}</TableCell>
             <TableCell>
@@ -42,6 +43,9 @@ export default function RevShareTable({ revArray }: { revArray: RevArray[] }) {
             </TableCell>
             <TableCell>
               <Text>{(week.claimedSol*week.unclaimedShare).toFixed(2)} SOL ({(week.unclaimedShare*100).toFixed(2)}%)</Text>
+            </TableCell>
+            <TableCell>
+              <Text>{(week.ratioPerPoint*10).toFixed(4)}/{(week.ratioPerPoint*63).toFixed(4)} SOL</Text>
             </TableCell>
             <TableCell>
               <Text>{week.ratioPerPoint.toFixed(6)} SOL</Text>
