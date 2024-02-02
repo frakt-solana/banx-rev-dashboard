@@ -1,6 +1,6 @@
 'use client'
 
-import { Card, Title, Grid, Metric } from '@tremor/react';
+import { Card, Title, Grid, Metric, Text } from '@tremor/react';
 import Chart from './chart';
 import GrowthDecreaseChart from './growthDecreaseChart';
 import { revArray } from './revData';
@@ -42,10 +42,11 @@ export default function IndexPage() {
     
 
   return (
-    <main className="p-4 md:p-10 mx-auto max-w-7xl ">
+    <Card className='rounded-none p-10'>
       <Metric>Banx Revenue Dashboard</Metric>
       <Title>{totalSol.toFixed(0)} {ticker} distributed to holders in {totalWeeks} weeks</Title>
       <UsdSwitch revArray={revArray} isswitchon={isSwitchOn} handleswitchchange={handleSwitchChange}/>
+      <Text>USD values are using the price of Solana at dates of revenue share</Text>
       <Grid numItems={1} numItemsSm={2} numItemsLg={2} className="gap-2">
           <Chart revArray={revArray} ticker={ticker}/>
           <GrowthDecreaseChart revArray={revArray}/>
@@ -57,6 +58,6 @@ export default function IndexPage() {
         <RevShareTable revArray={revArray} ticker={ticker}/>
       </Card>
      
-    </main>
+    </Card>
   );
 }

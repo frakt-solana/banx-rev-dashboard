@@ -1,5 +1,4 @@
 import './globals.css';
-
 import { Analytics } from '@vercel/analytics/react';
 import { Suspense } from 'react';
 
@@ -15,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="h-full bg-gray-900">
-      <body className="h-full">
+    <html lang="en" >
+      <body >
         <Suspense>
         </Suspense>
         {children}
