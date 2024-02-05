@@ -4,7 +4,6 @@ import { Switch, Text} from '@tremor/react';
 import { useState } from "react";
 import { RevArray } from './types';
 
-
 export default function UsdSwitch({ revArray, isswitchon, handleswitchchange }: { revArray: RevArray[], isswitchon: boolean, handleswitchchange: any}) {
   return (
             <div className='inline-flex flex-end'>
