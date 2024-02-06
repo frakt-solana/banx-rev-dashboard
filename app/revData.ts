@@ -420,5 +420,19 @@ export const revArray = [
     unclaimedShare: 0.41,
     ratioPerPoint: 0.00028,
     solPrice: 95,
-  }
+  },
+  {
+      week: 31,
+      solPrice: 94,
+      totalMigratedPartnerPoints: 483480,
+      totalPartnerPoints: 825185,
+      totalStakedPoints: 372151,
+      totalUnstakedPoints: 453034,
+      totalRewardedPoints: 372151,
+      freeLoansBanxPoints: 0,
+      claimedShare: 0.7697340117481591,
+      claimedSol: 133.16398403243153,
+      unclaimedShare: 0.23026598825184083,
+      ratioPerPoint: 0.0003578224538760652
+    }
 ] as RevArray[];
