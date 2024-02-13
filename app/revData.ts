@@ -431,7 +431,7 @@ export const revArray = [
       totalRewardedPoints: 372151,
       freeLoansBanxPoints: 0,
       claimedShare: 0.7697340117481591,
-      claimedSol: 133.16398403243153,
+      claimedSol: 173,
       unclaimedShare: 0.23026598825184083,
       ratioPerPoint: 0.0003578224538760652
   },
@@ -445,7 +445,7 @@ export const revArray = [
     totalRewardedPoints: 337549,
     freeLoansBanxPoints: 0,
     claimedShare: 0.6981653842971788,
-    claimedSol: 76.10002688839249,
+    claimedSol: 109,
     unclaimedShare: 0.3018346157028212,
     ratioPerPoint: 0.00022544882932075785
   }
