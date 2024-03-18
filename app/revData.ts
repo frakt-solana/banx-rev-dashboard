@@ -431,7 +431,7 @@ export const revArray = [
       totalRewardedPoints: 372151,
       freeLoansBanxPoints: 0,
       claimedShare: 0.7697340117481591,
-      claimedSol: 133.16398403243153,
+      claimedSol: 173,
       unclaimedShare: 0.23026598825184083,
       ratioPerPoint: 0.0003578224538760652
   },
@@ -445,7 +445,7 @@ export const revArray = [
     totalRewardedPoints: 337549,
     freeLoansBanxPoints: 0,
     claimedShare: 0.6981653842971788,
-    claimedSol: 76.10002688839249,
+    claimedSol: 109,
     unclaimedShare: 0.3018346157028212,
     ratioPerPoint: 0.00022544882932075785
   },
@@ -459,7 +459,7 @@ export const revArray = [
     totalRewardedPoints: 320918,
     freeLoansBanxPoints: 0,
     claimedShare: 0.6637668569537519,
-    claimedSol: 50.44628112848515,
+    claimedSol: 76,
     unclaimedShare: 0.336233143046248,
     ratioPerPoint: 0.00015719367915942748
   },
@@ -473,7 +473,7 @@ export const revArray = [
     totalRewardedPoints: 331311,
     freeLoansBanxPoints: 0,
     claimedShare: 0.6852630925788037,
-    claimedSol: 63.729467609828745,
+    claimedSol: 93,
     unclaimedShare: 0.3147369074211963,
     ratioPerPoint: 0.00019235542318193102
   },
@@ -487,7 +487,7 @@ export const revArray = [
     totalRewardedPoints: 332890,
     freeLoansBanxPoints: 0,
     claimedShare: 0.6885289980971292,
-    claimedSol: 48.885558864896176,
+    claimedSol: 71,
     unclaimedShare: 0.31147100190287086,
     ratioPerPoint: 0.00014685198974104412
   },
@@ -501,7 +501,7 @@ export const revArray = [
     totalRewardedPoints: 319247,
     freeLoansBanxPoints: 0,
     claimedShare: 0.6603106643501282,
-    claimedSol: 50.84392115495987,
+    claimedSol: 77,
     unclaimedShare: 0.33968933564987175,
     ratioPerPoint: 0.00015926201704310415
   },
@@ -515,7 +515,7 @@ export const revArray = [
     totalRewardedPoints: 328197,
     freeLoansBanxPoints: 0,
     claimedShare: 0.6788222884090345,
-    claimedSol: 35.29875899726979,
+    claimedSol: 52,
     unclaimedShare: 0.3211777115909655,
     ratioPerPoint: 0.00010755356995118723
   }
