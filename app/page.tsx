@@ -55,6 +55,7 @@ export default function IndexPage() {
       </Grid>
       <Card className="mt-6">
         <Title>Weekly Revenue Data</Title>
+        <Text>** From week 1 to week 20 revenue backlog was used.</Text>
         <RevShareTable revArray={revArray} ticker={ticker}/>
       </Card>
      
